@@ -3,13 +3,6 @@ import psycopg
 from psycopg import sql
 import os
 
-#DB_PARAMS = {
- #   "host": "localhost",
-  #  "port": 5432,
-   # "dbname": "testdb",
-    #"user": "postgres",
-    #"password": "mysecretpassword"
-#}
 DB_PARAMS = {
     "host":     os.getenv("DB_HOST", "localhost"),
     "port":     int(os.getenv("DB_PORT", 5432)),
